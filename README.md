@@ -65,13 +65,13 @@ python app.py
 
   🌟 Future Application 
 1.Offline School & College Exams
-✔ Ensures fairness without internet dependency
-2.Government & Board Exams
-✔ Boosts security in large-scale offline exams
-3.Invigilator Training Tool
-✔ Use recorded alerts for staff training
-
   
+✔ Ensures fairness without internet dependency
+
+2.Government & Board Exams
+
+✔ Boosts security in large-scale offline exams
+
 
 
 
