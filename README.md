@@ -63,15 +63,7 @@ python app.py
 - Torch (PyTorch) → Deep learning framework powering YOLOv5
 - Flask → Web framework
 
-  🌟 Future Application 
-1.Offline School & College Exams
-  
-✔ Ensures fairness without internet dependency
-
-2.Government & Board Exams
-
-✔ Boosts security in large-scale offline exams
-
+ 
 
 
 
