@@ -7,23 +7,23 @@ Powered by YOLOv5, the system also detects prohibited items like mobile phones,h
 
 📂 Project Structure
 
-├── yolov5/                 # YOLOv5 model & scripts
+├── yolov5/                -> YOLOv5 model & scripts
 
-├── test/                   # Test images/videos for detection
+├── test/                   -> Test images/videos for detection
 
-├── templates/              # Web interface files
+├── templates/              -> Web interface files
 
-├── static/                 # CSS & styling elements
+├── static/                 -> CSS & styling elements
 
-├── output_annotated.mp4    # Processed detection results
+├── output_annotated.mp4    -> Processed detection results
 
-├── data.yaml               # Dataset configuration
+├── data.yaml               -> Dataset configuration
 
-├── best.pt                 # Trained YOLOv5 model weights
+├── best.pt                 -> Trained YOLOv5 model weights
 
-├── app.py                  # Main application script
+├── app.py                  -> Main application script
 
-├── README.md               # Project documentation
+├── README.md               -> Project documentation
 
 
 ⚙️ Installation & Setup
