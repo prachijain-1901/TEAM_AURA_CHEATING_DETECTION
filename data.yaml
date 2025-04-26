@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 6
+names: ['-', '- collaborate with your team on computer vision projects', '- collect - organize images', 'Roboflow is an end-to-end computer vision platform that helps you', 'This dataset was exported via roboflow.com on February 4- 2024 at 1-17 PM GMT', 'tugasku mematikan - v1 2023-07-23 8-48pm']
+
+roboflow:
+  workspace: datatrain-lbott
+  project: exam-cheating-9iz1y
+  version: 1577
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/datatrain-lbott/exam-cheating-9iz1y/dataset/1577

@@ -1,0 +1,124 @@
+/* Glowing animated background */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #2e1f47, #4a2e74, #1f305e, #2b415e);
+    background-size: 600% 600%;
+    animation: glowFlow 12s ease infinite; /* Faster background transition */
+}
+
+/* Background animation for soft glowing effect */
+@keyframes glowFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Container */
+.container {
+    padding: 20px; /* Reduced padding */
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 15px; /* Slightly smaller border radius */
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.05); /* Lighter box shadow */
+    display: inline-block;
+    margin-top: 20px; /* Reduced top margin */
+    width: 85%; /* Slightly smaller width */
+    max-width: 1000px; /* Smaller max-width */
+}
+
+/* Title */
+h1 {
+    font-size: 28px; /* Reduced font size */
+    color: #f8f8ff;
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+/* Video */
+.video-box {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0; /* Reduced margin */
+    transition: transform 0.3s;
+    width: 85vw; /* Slightly smaller video width */
+    max-width: 1000px; /* Max width for large screens */
+    height: auto;
+}
+
+.video-box:hover {
+    transform: scale(1.02); /* Smaller scale effect */
+}
+
+#videoFeed {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Slightly smaller border radius */
+    border: none;
+    box-shadow: 0 0 25px rgba(160, 130, 255, 0.3); /* Lighter box shadow */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#videoFeed.glow {
+    animation: glowAround 2s infinite;
+}
+
+@keyframes glowAround {
+    0% { box-shadow: 0 0 30px rgba(160, 130, 255, 0.3); }
+    50% { box-shadow: 0 0 45px rgba(200, 150, 255, 0.5); }
+    100% { box-shadow: 0 0 30px rgba(160, 130, 255, 0.3); }
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px; /* Reduced margin */
+}
+
+button.start, button.stop {
+    padding: 10px 24px; /* Reduced button size */
+    font-size: 16px; /* Smaller font size */
+    border: none;
+    border-radius: 8px; /* Smaller border radius */
+    cursor: pointer;
+    margin: 0 8px; /* Reduced margin */
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Start Button - Green */
+button.start {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+button.start:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05);
+}
+
+/* Stop Button - Red */
+button.stop {
+    background-color: #dc3545; /* Red */
+    color: white;
+    display: none;
+}
+
+button.stop:hover {
+    background-color: #c82333; /* Darker red on hover */
+    transform: scale(1.05);
+}
+
+/* Recording Text */
+.recording-text {
+    color: #ffcccc;
+    font-weight: bold;
+    font-size: 16px; /* Smaller font size */
+    margin-top: 10px;
+    display: none;
+    animation: blinkRecording 1.5s infinite;
+}
+
+@keyframes blinkRecording {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cheating Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Cheating Detection</h1>
+
+        <div class="video-box">
+            <img src="{{ url_for('video_feed') }}" id="videoFeed">
+        </div>
+
+        <div class="recording-text" id="recordingText">Recording...</div>
+
+        <div class="buttons">
+            <button class="start" id="startBtn">Start</button>
+            <button class="stop" id="stopBtn">Stop</button>
+        </div>
+    </div>
+
+    <script>
+        const startBtn = document.getElementById('startBtn');
+        const stopBtn = document.getElementById('stopBtn');
+        const recordingText = document.getElementById('recordingText');
+        const videoFeed = document.getElementById('videoFeed');
+
+        startBtn.addEventListener('click', () => {
+            startBtn.style.display = 'none';
+            recordingText.style.display = 'block';
+            videoFeed.classList.add('glow');
+
+            setTimeout(() => {
+                stopBtn.style.display = 'inline-block';
+            }, 2000); // Delay for stop button
+        });
+
+        stopBtn.addEventListener('click', () => {
+            stopBtn.style.display = 'none';
+            recordingText.style.display = 'none';
+            startBtn.style.display = 'inline-block';
+            videoFeed.classList.remove('glow');
+        });
+    </script>
+</body>
+</html>

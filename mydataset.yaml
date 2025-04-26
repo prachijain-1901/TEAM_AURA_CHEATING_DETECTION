@@ -1,0 +1,5 @@
+train: C:/object_detect/train/images
+val: C:/object_detect/val/images
+
+nc: 6
+names: ['Passing-Sheet', 'Phone', 'side-eye', 'talking', 'Backside-turn', 'phone']
