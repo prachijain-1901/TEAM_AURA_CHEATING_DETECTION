@@ -1,5 +1,6 @@
 # TEAM_AURA_CHEATING_DETECTION
 🎯 An AI-powered cheating detection system using YOLOv5 for Offline Exams.
+
 🚀 Project Overview:
 Ensuring fairness in offline exams is challenging due to human limitations in detecting cheating. It is an AI-powered system that integrates with live CCTV feeds and connects invigilators via a web or mobile application, delivering real-time alerts through notifications.It uses computer vision to analyze body and hand movements, identifying suspicious behaviors such as posture shifts, note passing, or turning around.
 Powered by YOLOv5, the system also detects prohibited items like mobile phones,hidden paper chits.
@@ -29,17 +30,14 @@ Powered by YOLOv5, the system also detects prohibited items like mobile phones,h
 
 
 1️⃣ Clone this repository:
-
 git clone https://github.com/prachijain-1901/TEAM_AURA_CHEATING_DETECTION.git
 
 
 2️⃣ Install dependencies:
-
 pip install -r requirements.txt
 
 
 3️⃣ Run the application:
-
 python app.py
 
 
@@ -55,5 +53,28 @@ python app.py
   ![Screenshot 2025-04-26 111052](https://github.com/user-attachments/assets/221b0bbc-59bf-40c1-97bf-e73c2c2011f1)
 - Results:
 - ![Screenshot 2025-04-26 110906](https://github.com/user-attachments/assets/e70d7e50-6b9d-4a45-9d0f-4d94acd02637)
+
+  📦 Core Libraries Used:
+- YOLOv5 → State-of-the-art object detection model
+- OpenCV → Image processing & video manipulation
+- Pandas → Data handling & analysis
+- NumPy → Efficient numerical computations
+- Matplotlib → Visualization of results
+- Torch (PyTorch) → Deep learning framework powering YOLOv5
+- Flask → Web framework
+
+  🌟 Future Application 
+1.Offline School & College Exams
+✔ Ensures fairness without internet dependency
+2.Government & Board Exams
+✔ Boosts security in large-scale offline exams
+3.Invigilator Training Tool
+✔ Use recorded alerts for staff training
+
+  
+
+
+
+
 
 
